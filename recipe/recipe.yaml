@@ -28,8 +28,8 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - fonttools >=4.34.0
-    - uharfbuzz >=0.16.0
+    - fonttools >=4.62.1
+    - uharfbuzz >=0.53.2
 
 tests:
   - python:
