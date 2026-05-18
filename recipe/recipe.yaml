@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: blackrenderer
-  version: "0.8.1"
+  version: "0.8.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/blackrenderer-${{ version }}.tar.gz
-  sha256: 32d1d875b61ac13ccbe75128aa308943d2d8a40ce95d77f9d64930ed8978d509
+  sha256: 13c97569c4b05c0e9f7c4e85af4f4a8ac9c3e76bd6a43e2c5307b4df25ac11c6
 
 build:
   number: 0
@@ -28,8 +28,8 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - fonttools >=4.34.0
-    - uharfbuzz >=0.16.0
+    - fonttools >=4.62.1
+    - uharfbuzz >=0.53.2
 
 tests:
   - python:
