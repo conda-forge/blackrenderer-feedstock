@@ -1,5 +1,5 @@
 {% set name = "blackrenderer" %}
-{% set version = "0.6.0" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/blackrenderer-{{ version }}.tar.gz
-  sha256: 639e30d2ddd080e90780e45130ac202c5f4f5180db5d6c48f61a222d58560952
+  sha256: 13c97569c4b05c0e9f7c4e85af4f4a8ac9c3e76bd6a43e2c5307b4df25ac11c6
 
 build:
   entry_points:
     - blackrenderer=blackrenderer.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
